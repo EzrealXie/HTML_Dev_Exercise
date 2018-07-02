@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Lab1_3</title>
+	<style type="text/css">
+		#goToBottom {text-align: right}
+	</style>
+	<style type="text/css">
+		#goToTop {text-align: right}
+	</style>
+<script>
+	function setBottom(){
+		window.location.hash="#goToTop";
+	}
+	</script>
+<script>
+	function setTop(){
+		window.location.hash="#goToBottom"
+	}
+	</script>
+</head>
+
+<body>
+	<div id="goToBottom">
+		Top of the page
+		<button onClick="setBottom()">
+			Go to bottom
+		</button>
+	</div>
+	<h1 align="center">
+	Exercise N°3
+	</h1>
+	<h3 align="left">
+	A.	Print the squares of the numbers 1 - 20. Each number should be on a separate line, next to it the number 2 superscripted, an equal sign and the result. 
+	</h3>
+	<script>
+	function square(num){return num*num;} 
+		for (var i = 1;i <= 20;i++)
+			{
+				var res = i + "<sup>2</sup> = " + square(i) + "<br />";
+				var out = "<center>" + res + "</center>";
+				document.write(out);
+			}
+	</script>
+	
+	<br>
+	<hr>
+	<br>
+	
+	<div id="B">
+	<h3>
+		B.	Create some links to various search.
+		</h3>
+	<a href="https://www.Bing.cn">Bing</a>
+	<a href="https://www.google.com">Google</a>
+	<a href="https://www.baidu.com">Baidu</a>
+	</div>
+		
+	<br>
+	<hr>
+	<br>
+	
+	<div id="C">
+	<h3>
+		C.	Create links to five different pages on five different websites that should all open in a new window.
+		</h3>
+	<a href="Lab1_1.html" target="new">Lab1.1</a>
+	<a href="Lab1_2.html" target="new">Lab1.2</a>
+	<a href="Lab1_3.html" target="new">Lab1.3</a>
+	<a href="Google.com" target="new">Google.com</a>
+	<a href="Bing.cn" target="new">Bing.cn</a>
+	
+	<br>
+	<hr>
+	<br>
+	
+	<h3>
+		D.	Create a page with a link at the top of it that when clicked will jump all the way to the bottom of the page. At the bottom of the page there should be a link to jump back to the top of the page.
+	</h3>
+	<div id="goToTop">
+		Bottom of the page
+		<button onClick="setTop()">
+		Go to top
+		</button>
+	</div>
+		
+	<br>
+	<hr>
+	<br>
+		
+	
+	</div>
+	
+	
+</body>
+</html>

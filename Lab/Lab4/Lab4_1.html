@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Lab4</title>
+</head>
+
+<body>
+	<h1 align="center">Exercise N°1</h1>
+	<h1 align="center">Travel reservation form</h1>
+	
+<div style="margin:auto;width: 300px" >
+			
+	<label for="fullName">Full Name*:</label><br>
+	<input type="text" required="required" id="fullName" placeholder="FirstName LastName" style="width: 300px"><br>
+	<label for="emailAddress">Email Address*:</label><br>
+  	<input type="email" required="required" id="emailAddress" placeholder="JohnAppleseed@Corp.com" style="width: 300px">
+	<label for="tourPackage">Select Tour Package*:</label><br>
+	<select name="vehicleSelections" required="required" id="tourPackage">
+		<option value="Goa">Goa</option>
+		<option value="Volvo">Volvo</option>
+		<option value="Saab">Saab</option>
+		<option value="Fiat">Fiat</option>
+		<option value="Audi">Audi</option>
+  		</select><br>
+	<label for="arrivalDate">Arrival Date*:</label><br>
+	<input type="date" required="required" id="arrivalDate" placeholder="m/d/y"><br>
+	<label for="numberOfPerson">Number of Person*:</label><br>
+	<input required="required" id="numberOfPerson" placeholder="0-99" maxlength="2"><br>
+	What would you like to do upon your arrival?<br>
+	<input type="checkbox" required="required" id="Boarding">
+	<label for="boarding">Boarding</label><br>
+	<input type="checkbox" required="required" id="Fooding">
+	<label for="fooding">Fooding</label><br>
+	<input type="checkbox" required="required" id="Sight Seeing">
+	<label for="sightseeing">Sight Seeing</label><br>
+	<label for="couponCode">Coupon Code:</label><br>
+	<input id="couponCode" placeholder="DEMOCODE" type="text"><br>
+	<label for="terms">Terms and Conditions*</label><br>
+	<input type="radio" value="positive">
+	I understand and agree.
+	<input type="radio" value="negitive">
+	I don't agree.<br>
+	<center>
+	<input type="submit" value="Comfirm Reservation" style="width: 200px;">
+		</center>
+	</div>
+</body>
+</html>
